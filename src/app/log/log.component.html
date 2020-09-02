@@ -1,0 +1,8 @@
+<h3>Logs:</h3>
+<ng-container *ngIf="calculations$ | async as calculations">
+    <ng-container *ngIf="currentCalculation$ | async as currentCalculation">
+        <ng-container *ngFor="let calculation of calculations">
+            <p [ngClass]="{ 'current': calculation === currentCalculation }">{{ calculation.calculationType }} ({{ calculation.firstNumber }},{{ calculation.secondNumber }}). Result: {{ calculation.result }}</p>
+        </ng-container>
+    </ng-container>
+</ng-container>

@@ -1,0 +1,19 @@
+#calc {
+    width: 50%;
+    height: 100%;
+    position: fixed;
+    top: 0;
+    left: 0;
+}
+#log {
+    width: 50%;
+    height: 100%;
+    position: fixed;
+    top: 0;
+    right: 0;
+    overflow-y: scroll;
+}
+div {
+    padding-left: 10px;
+    padding-right: 10px;
+}
